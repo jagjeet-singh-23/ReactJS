@@ -1,24 +1,38 @@
 import React from 'react'
 import DeleteAllUsers from './DeleteAllUsers'
 import styled from 'styled-components'
+import { fakeUserData } from '../api'
+import { useDispatch } from 'react-redux'
+import { addUser } from '../store/slices/UserSlice'
 
 const UserDetails = () => {
-    return (
-        <Wrapper>
-            <div className="content">
-                <div className="admin-table">
-                    <div className="admin-subtitle">List of User Details</div>
-                    <button className='btn add-btn'>Add new Users</button>
-                </div>
-                {/* <ul>
+  
+  const dispatch = useDispatch();
+
+  const addNewUser = (payload) => {
+    console.log(payload);
+    dispatch(addUser(payload));
+  };
+
+  return (
+    <Wrapper>
+      <div className="content">
+        <div className="admin-table">
+          <div className="admin-subtitle">List of User Details</div>
+          <button className='btn add-btn'
+            onClick={() => addNewUser(fakeUserData())}>
+            Add new Users
+          </button>
+        </div>
+        {/* <ul>
                     <li>Hi</li>
                     <li>Hiii</li>
                 </ul> */}
-                <hr />
-                <DeleteAllUsers />
-            </div>
-        </Wrapper>
-    )
+        <hr />
+        <DeleteAllUsers />
+      </div>
+    </Wrapper>
+  )
 }
 const Wrapper = styled.section`
   margin: 1rem 3.2rem;
