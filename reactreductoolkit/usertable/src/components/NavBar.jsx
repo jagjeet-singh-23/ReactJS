@@ -4,11 +4,11 @@ import styled from "styled-components";
 const Navbar = () => {
     return (
         <Wrapper>
-            <div>Welcome, to Thapa Education Hub</div>
+            <div>A Dummy App</div>
             <h1>Admin Table</h1>
 
             <section>
-                <div>One Destination for complete Web Development</div>
+                <div>Online Shopping Modified</div>
                 <nav>
                     <ul className="menuItems">
                         <li>
