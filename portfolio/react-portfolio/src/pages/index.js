@@ -80,7 +80,9 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <h3 className='text-3xl py-1'>Portfolio</h3>
+          <h3 className='text-3xl py-2'>Portfolio</h3>
+          <p className='text-md py-5 leading-8 text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Egestas diam in arcu cursus euismod quis viverra nibh cras. Bibendum enim facilisis gravida neque convallis a cras. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>
+          <p className='text-md py-5 leading-8 text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Egestas diam in arcu cursus euismod quis viverra nibh cras. Bibendum enim facilisis gravida neque convallis a cras. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>
         </section>
       </main>
     </div>
