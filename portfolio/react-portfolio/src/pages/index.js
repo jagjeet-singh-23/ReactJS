@@ -6,6 +6,8 @@ import Image from 'next/image';
 import design from '/home/frustrated-dev/ReactJS/portfolio/react-portfolio/public/design.png'
 import code from '/home/frustrated-dev/ReactJS/portfolio/react-portfolio/public/code.png'
 import consulting from '/home/frustrated-dev/ReactJS/portfolio/react-portfolio/public/consulting.png'
+import web1 from '/home/frustrated-dev/ReactJS/portfolio/react-portfolio/public/web1.png'
+import web2 from '/home/frustrated-dev/ReactJS/portfolio/react-portfolio/public/web2.png'
 import { Inter } from 'next/font/google'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -19,7 +21,7 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <main className='px-10'>
+      <main className='px-10 md:px-20 lg:40'>
         <section className='min-h-screen'>
           <nav className='py-10 mb-12 flex justify-between'>
             <h1 className='text-xl font-burtons'>My Portfolio</h1>
@@ -29,9 +31,10 @@ export default function Home() {
             </ul>
           </nav>
           <div className='text-center p-10'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium'>Jagjeet Singh</h2>
-            <h3 className='text-2xl py-2'>Web Developer and Tech Enthusiast</h3>
-            <p className='text-md py-5 leading-8 text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>Jagjeet Singh</h2>
+            <h3 className='text-2xl py-2 md:text-3xl'>Web Developer and Tech Enthusiast</h3>
+            <p className='text-md py-5 leading-8 text-gray-300 md:text-xl max-w-xl mx-auto'>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           </div>
           <div className='text-5xl  flex justify-center gap-16 py-3 text-gray-200 '>
             <AiFillGithub />
@@ -83,6 +86,42 @@ export default function Home() {
           <h3 className='text-3xl py-2'>Portfolio</h3>
           <p className='text-md py-5 leading-8 text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Egestas diam in arcu cursus euismod quis viverra nibh cras. Bibendum enim facilisis gravida neque convallis a cras. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>
           <p className='text-md py-5 leading-8 text-gray-300'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Egestas diam in arcu cursus euismod quis viverra nibh cras. Bibendum enim facilisis gravida neque convallis a cras. Aenean vel elit scelerisque mauris pellentesque pulvinar pellentesque.</p>
+          <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
+            <div className='basis-1/3 flex'>
+              <Image src={web1} className='rounded-lg object-cover' width={"100%"}
+                height={"100%"}
+                layout="responsive"/>
+                
+              <Image src={web1} className='rounded-lg object-cover' width={"100%"}
+                height={"100%"}
+                layout="responsive"/>
+                
+            </div>
+            <div className='basis-1/3 flex'>
+              <Image src={web1} className='rounded-lg object-cover' width={"100%"}
+                height={"100%"}
+                layout="responsive"/>
+                
+            </div>
+            <div className='basis-1/3 flex'>
+              <Image src={web2} className='rounded-lg object-cover' width={"100%"}
+                height={"100%"}
+                layout="responsive"/>
+                
+            </div >
+            <div className='basis-1/3 flex'>
+              <Image src={web2} className='rounded-lg object-cover' width={"100%"}
+                height={"100%"}
+                layout="responsive"/>
+                
+            </div>
+            <div className='basis-1/3 flex'>
+              <Image src={web2} className='rounded-lg object-cover' width={"100%"}
+                height={"100%"}
+                layout="responsive"/>
+                
+            </div>
+          </div>
         </section>
       </main>
     </div>
