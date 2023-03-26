@@ -1,15 +1,17 @@
 import React from 'react'
 import styles from './style'
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import Stats from './components/Stats'
-import Business from './components/Business'
-import Billing from './components/Billing'
-import CardDeal from './components/CardDeal'
-import Testimonials from './components/Testimonials'
-import Clients from './components/Clients'
-import CTA from './components/CTA'
-import Footer from './components/Footer'
+import {
+  Navbar,
+  Billing,
+  CardDeal,
+  Business,
+  Clients,
+  CTA,
+  Stats,
+  Footer,
+  Testimonials,
+  Hero,
+} from './components'
 
 const App = () => {
   return (
