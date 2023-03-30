@@ -2,6 +2,7 @@ import { useState, useEffect } from "react"
 import { Stack, Box, Typography } from "@mui/material"
 import Sidebar from "./Sidebar"
 import Videos from "./Videos"
+import { fetchFromAPI } from "../utils/fetch_from_API"
 
 const Feed = () => {
   return (
@@ -16,7 +17,7 @@ const Feed = () => {
         <Typography variant='h4' fontWeight='bold' md={2} sx={{ color: "white" }}>
           New <span style={{ color: "#F31503" }}>vidoes</span>
         </Typography>
-        <Videos />
+        <Videos video={[]} />
       </Box>
     </Stack>
   )
