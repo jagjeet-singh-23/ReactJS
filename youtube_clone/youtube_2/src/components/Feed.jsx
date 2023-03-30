@@ -6,15 +6,11 @@ import { fetchFromAPI } from "../utils/fetch_from_API"
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState('New');
-  const [videos, setVideos] = useState([])
+  const [videos, setVideos] = useState([]);
 
   useEffect(() => {
-    const fetchVideos = async () => {
-      const data = await fetchFromAPI(`search?part=snippet&q=${selectedCategory}`);
-      console.log(data);
-      setVideos(data.items);
-    };
-    fetchVideos();
+    fetchFromAPI(`search?part=snippet&q=${selectedCategory}`)
+    .then((data) => setVideos(data.items))
   }, [selectedCategory]);
 
 
