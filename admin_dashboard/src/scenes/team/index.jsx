@@ -71,12 +71,36 @@ const Team = () => {
         )
       }
     }
-
   ]
   return (
-    <Box>
+    <Box m="20px">
       <Header title="TEAM" subtitle="Managing the Team Members " />
-      <Box>
+      <Box
+        mt="40px"
+        height="75vh"
+        sx={{
+          "& .MuiDataGrid-root": {
+            border: "none",
+          },
+          "& .MuiDataGrid-cell": {
+            borderBottom: "none",
+          },
+          "& .name-column--cell": {
+            color: colors.greenAccent[300]
+          },
+          "& .MuiDataGrid-columnHeaders": {
+            backgroundColor: colors.blueAccent[700],
+            borderBottom: "none",
+          },
+          "& .MuiDataGrid-footerContainer": {
+            backgroundColor: colors.blueAccent[700],
+            borderBottom: "none",
+          },
+          "& .MuiDataGrid-virtualScroller": {
+            backgroundColor: colors.primary[400]
+          },
+        }}
+      >
         <DataGrid checkboxSelection rows={mockDataTeam} columns={columns} />
       </Box>
     </Box>
